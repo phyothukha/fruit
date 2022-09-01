@@ -1,0 +1,227 @@
+$light:hsl(0, 0%, 100%);
+$dark:hsl(212, 27%, 19%);
+$nav-pills-link-active-bg:hsl(0, 0%, 100%);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700;900&family=Barlow:wght@600&family=Kumbh+Sans:wght@300;400;700&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700;900&family=Barlow:wght@600&family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row{
+  margin: 0;
+
+}
+body{
+  font-family:'Barlow',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+h1,h2,h3,h5{
+  font-weight: 900;
+  font-family: 'Alegreya', serif;
+
+}
+//.humburger{
+//  display: none;
+//}
+p{
+  line-height: 1.5rem;
+}
+header{
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: bottom;
+
+}
+.creative{
+  font-size: 56px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 6px;
+  padding-bottom: 10vh;
+}
+.box{
+  padding: 100px;
+}
+
+.head-nav li a{
+  color:hsl(0, 0%, 100%) ;
+}
+.head-nav li a:last-child{
+  color: hsl(212, 27%, 19%);
+  background-size: 50%;
+}
+
+.learn{
+  font-family: 'Alegreya', serif;
+  color:hsl(212, 27%, 19%) ;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+.learn::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 110px;
+  background-color: hsl(51, 100%, 49%);
+  right: 10px;
+  bottom: 10px;
+  z-index: -1;
+  transition: height 0.4s;
+}
+.learn-sec{
+  font-family: 'Alegreya', serif;
+  color:hsl(212, 27%, 19%) ;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+.learn-sec::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 110px;
+  background-color: hsl(7, 99%, 70%);
+  right: 10px;
+  bottom: 10px;
+  z-index: -1;
+  transition: height 0.4s;
+}
+.learn:hover::after{
+  height: 50%;
+}
+.learn-sec:hover::after{
+  height: 50%;
+}
+.box-content{
+  color: hsl(198, 62%, 26%);
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  padding:0 150px;
+
+}
+.testtimonial{
+  text-align:center ;
+  padding: 100px 50px;
+}
+.testtimonial h2{
+  color:  hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+.single-testimonial img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.single-testimonial p{
+  color:hsl(232, 10%, 55%)
+}
+.author{
+  //color: hsl(210, 4%, 67%);
+  margin-top: 70px;
+  font-size:22px;
+}
+footer{
+  padding: 5rem 0;
+  background-color: hsl(168, 34%, 41%);
+  text-align: center;
+}
+footer img{
+  color:hsl(213, 9%, 39%);
+;
+
+}
+.footer-menu{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.logo-img{
+  color:hsl(212, 27%, 19%);
+}
+.foot{
+  color:hsl(167, 40%, 24%) ;
+  transition: 0.2s;
+}
+svg{
+  color: hsl(198, 62%, 26%);
+}
+.foot:hover{
+  color: hsl(0, 0%, 100%);
+}
+.social-menu ul li a:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+.sunny{
+  color: hsl(198, 62%, 26%);
+  font-size: 30px;
+  font-weight:700;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+//@media only screen and (max-width:1020px){
+//
+//}
+//@media only screen and (max-width:768px){
+//  .humburger{
+//    display: inline-block;
+//
+//  }
+//  .head-nav{
+//    position: relative;
+//  }
+//  .head-nav-item{
+//    background-color: rgb(62, 191, 255);
+//    //display: inline-block;
+//    width: 100%;
+//    position: absolute;
+//    top: 100px;
+//    left: 0;
+//    text-align: center;
+//    overflow: hidden;
+//  }
+//  //.head-nav-item ul li{
+//  //  display: block;
+//  //
+//  //
+//  //}
+//
+//}
+
+@media only screen and (max-width:375px){
+ .box-content{
+   top: 50%;
+   padding: 10px 10px;
+ }
+.box{
+  padding: 10px 50px;
+}
+  .creative{
+    font-size: 40px;
+    padding: 5vh;
+  }
+}
+
+
+
+
+
